@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="icon-menu" src="./images/icon-menu.svg" alt="icon-menu" />
+      <img class="logo" src="./images/logo.svg" alt="" />
+      <nav>
+        <img
+          class="icon-close"
+          src="./images/icon-close.svg"
+          alt="icon-close"
+        />
+        <ul class="nav-links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-container">
+        <img class="icon-cart" src="./images/icon-cart.svg" alt="icon-cart" />
+        <span class="tooltiptext">0</span>
+      </div>
+      <img
+        class="image-avatar"
+        src="./images/image-avatar.png"
+        alt="image-avatar"
+      />
+    </header>
+
+    <main>
+      <div class="checkout-card">
+        <div class="cart-top">
+          <p class="cart">Cart</p>
+        </div>
+        <div class="cart-content">
+          
+        </div>
+      </div>
+      <div class="main-wrapper">
+        <div class="outer-container">
+          <div class="image-container slider">
+            <img
+              class="slide slide-1 bigImg" id="bigImg"
+              src="./images/image-product-1.jpg"
+              alt="image-product-1"
+            />
+            
+        
+            <button aria-label="next" class="icon-previous"></button>
+            <button aria-label="next" class="icon-next"></button>
+         
+          </div>
+          <div class="thumbnail-container">
+            <picture class="thumbnail-img selected">
+              <img    
+              data-slide="1" src="images/image-product-1-thumbnail.jpg" alt="sneakers">
+            </picture>
+            <picture class="thumbnail-img">
+            <img
+              
+              data-slide="2"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            </picture>
+            <picture    class="thumbnail-img">
+            <img
+           
+              data-slide="3"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+          </picture>
+          <picture  class="thumbnail-img">
+            <img
+             
+              data-slide="4"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </picture>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <p class="company-name">Sneaker Company</p>
+          <h1 class="heading">Fall Limited Edition Sneakers</h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-details">
+            <span class="discount-price">$125.00</span>
+            <span class="discount-percent"> 50% </span>
+            <span class="normal-price">$250.00</span>
+          </div>
+          <div class="quantity-cta-wrapper">
+            <div class="quantity-control">
+              <img
+                class="icon-minus"
+                src="./images/icon-minus.svg"
+                alt="icon-minus"
+              />
+              <span class="quantity">0</span>
+              <img class="icon-plus" src="./images/icon-plus.svg" alt="" />
+            </div>
+            <button class="add-to-cart-btn">
+              <img src="./images/icon-cart.svg" alt="" /> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal" id="modal"> <!-- modal starts -->
+      <div class="modal__content">
+        <button aria-label="close" class="modal-close" id="closeModal"></button>
+        <button aria-label="previous" class="modal-previous"></button>
+        <img src="images/image-product-1.jpg" id="bigImgModal" class="isplayed-img" data-index-number="1" alt="sneakers" >
+        <button aria-label="next" class="modal-next"></button>
+      </div>
+      <div class="modal__thumbnails">
+        <picture class="modal__thumbnails__small" >
+          <img src="images/image-product-1-thumbnail.jpg" data-index-number="1" alt="sneakers">
+        </picture>
+        <picture class="modal__thumbnails__small">
+          <img src="images/image-product-2-thumbnail.jpg" data-index-number="2" alt="sneakers">
+        </picture>
+        <picture class="modal__thumbnails__small">
+          <img src="images/image-product-3-thumbnail.jpg" data-index-number="3" alt="sneakers">
+        </picture>
+        <picture class="modal__thumbnails__small">
+          <img src="images/image-product-4-thumbnail.jpg" data-index-number="4" alt="sneakers">
+        </picture>
+      </div>
+  </div> <!-- modal ends -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
